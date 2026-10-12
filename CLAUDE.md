@@ -10,6 +10,8 @@ Este repo es un proyecto de Remotion (plantilla TikTok) para editar vídeos vert
 - Pasos 2–4: pendientes de `referencia.mp4` y `mi-video.mp4` (ponlos en la raíz; están en .gitignore).
 
 ## Convenciones
+- `marca.md` (raíz) = marca Venue Finder DR (colores, Plus Jakarta Sans, logo en `public/brand/`).
+  Manda sobre `estilo.md` en colores, fuentes y logo; `estilo.md` manda en ritmo y edición.
 - `estilo.md` (raíz) es la fuente de verdad del estilo: valores concretos, `[SUPOSICIÓN]` donde se infiera.
   Cada corrección que el usuario apruebe se añade ahí (paso 4).
 - Fotogramas y audio de análisis van en `analisis/` (gitignored):
