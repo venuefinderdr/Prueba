@@ -1,0 +1,1093 @@
+{
+ "segments": [
+  [
+   2.344,
+   6.561
+  ],
+  [
+   6.966,
+   10.556
+  ],
+  [
+   10.783,
+   11.887
+  ],
+  [
+   12.167,
+   16.022
+  ],
+  [
+   16.127,
+   16.382
+  ],
+  [
+   17.097,
+   18.62
+  ],
+  [
+   18.799,
+   19.94
+  ],
+  [
+   20.165,
+   22.645
+  ],
+  [
+   22.806,
+   24.263
+  ],
+  [
+   24.796,
+   26.525
+  ],
+  [
+   26.679,
+   30.916
+  ],
+  [
+   31.377,
+   32.727
+  ],
+  [
+   32.873,
+   34.938
+  ],
+  [
+   35.409,
+   37.573
+  ],
+  [
+   37.885,
+   38.975
+  ],
+  [
+   39.371,
+   41.213
+  ],
+  [
+   41.316,
+   41.904
+  ],
+  [
+   42.421,
+   44.386
+  ],
+  [
+   44.809,
+   48.584
+  ],
+  [
+   48.846,
+   50.546
+  ],
+  [
+   50.762,
+   51.629
+  ],
+  [
+   51.945,
+   54.853
+  ],
+  [
+   55.142,
+   58.006
+  ]
+ ],
+ "durationSec": 48.765,
+ "captions": [
+  {
+   "text": " ¿Has",
+   "startMs": 0,
+   "endMs": 100,
+   "timestampMs": null,
+   "confidence": 0.508619
+  },
+  {
+   "text": " pasado",
+   "startMs": 100,
+   "endMs": 336,
+   "timestampMs": null,
+   "confidence": 0.996719
+  },
+  {
+   "text": " horas",
+   "startMs": 336,
+   "endMs": 646,
+   "timestampMs": null,
+   "confidence": 0.985547
+  },
+  {
+   "text": " buscando",
+   "startMs": 646,
+   "endMs": 1166,
+   "timestampMs": null,
+   "confidence": 0.990892
+  },
+  {
+   "text": " el",
+   "startMs": 1166,
+   "endMs": 1286,
+   "timestampMs": null,
+   "confidence": 0.986391
+  },
+  {
+   "text": " lugar",
+   "startMs": 1286,
+   "endMs": 1656,
+   "timestampMs": null,
+   "confidence": 0.997925
+  },
+  {
+   "text": " perfecto",
+   "startMs": 1656,
+   "endMs": 2026,
+   "timestampMs": null,
+   "confidence": 0.961809
+  },
+  {
+   "text": " para",
+   "startMs": 2026,
+   "endMs": 2226,
+   "timestampMs": null,
+   "confidence": 0.909783
+  },
+  {
+   "text": " tu",
+   "startMs": 2226,
+   "endMs": 2336,
+   "timestampMs": null,
+   "confidence": 0.954563
+  },
+  {
+   "text": " evento",
+   "startMs": 2336,
+   "endMs": 2656,
+   "timestampMs": null,
+   "confidence": 0.98845
+  },
+  {
+   "text": " en",
+   "startMs": 2656,
+   "endMs": 2776,
+   "timestampMs": null,
+   "confidence": 0.962067
+  },
+  {
+   "text": " República",
+   "startMs": 2776,
+   "endMs": 3466,
+   "timestampMs": null,
+   "confidence": 0.93325
+  },
+  {
+   "text": " Dominicana?",
+   "startMs": 3466,
+   "endMs": 4217,
+   "timestampMs": null,
+   "confidence": 0.965425
+  },
+  {
+   "text": " Cuando",
+   "startMs": 4217,
+   "endMs": 4391,
+   "timestampMs": null,
+   "confidence": 0.974304
+  },
+  {
+   "text": " buscas",
+   "startMs": 4391,
+   "endMs": 4811,
+   "timestampMs": null,
+   "confidence": 0.985113
+  },
+  {
+   "text": " dónde",
+   "startMs": 4811,
+   "endMs": 5231,
+   "timestampMs": null,
+   "confidence": 0.595386
+  },
+  {
+   "text": " celebrar",
+   "startMs": 5231,
+   "endMs": 5791,
+   "timestampMs": null,
+   "confidence": 0.99729
+  },
+  {
+   "text": " tu",
+   "startMs": 5791,
+   "endMs": 5931,
+   "timestampMs": null,
+   "confidence": 0.98618
+  },
+  {
+   "text": " boda,",
+   "startMs": 5931,
+   "endMs": 6381,
+   "timestampMs": null,
+   "confidence": 0.983035
+  },
+  {
+   "text": " cumpleaños",
+   "startMs": 6381,
+   "endMs": 7221,
+   "timestampMs": null,
+   "confidence": 0.955425
+  },
+  {
+   "text": " o",
+   "startMs": 7221,
+   "endMs": 7321,
+   "timestampMs": null,
+   "confidence": 0.922474
+  },
+  {
+   "text": " fiestas,",
+   "startMs": 7321,
+   "endMs": 7808,
+   "timestampMs": null,
+   "confidence": 0.996799
+  },
+  {
+   "text": " te",
+   "startMs": 7808,
+   "endMs": 7915,
+   "timestampMs": null,
+   "confidence": 0.96335
+  },
+  {
+   "text": " la",
+   "startMs": 7915,
+   "endMs": 8085,
+   "timestampMs": null,
+   "confidence": 0.946687
+  },
+  {
+   "text": " pasas",
+   "startMs": 8085,
+   "endMs": 8515,
+   "timestampMs": null,
+   "confidence": 0.986128
+  },
+  {
+   "text": " horas,",
+   "startMs": 8515,
+   "endMs": 8912,
+   "timestampMs": null,
+   "confidence": 0.992178
+  },
+  {
+   "text": " días",
+   "startMs": 8912,
+   "endMs": 9285,
+   "timestampMs": null,
+   "confidence": 0.990295
+  },
+  {
+   "text": " y",
+   "startMs": 9285,
+   "endMs": 9385,
+   "timestampMs": null,
+   "confidence": 0.938478
+  },
+  {
+   "text": " hasta",
+   "startMs": 9385,
+   "endMs": 9815,
+   "timestampMs": null,
+   "confidence": 0.981019
+  },
+  {
+   "text": " semanas",
+   "startMs": 9815,
+   "endMs": 10515,
+   "timestampMs": null,
+   "confidence": 0.998262
+  },
+  {
+   "text": " navegando",
+   "startMs": 10515,
+   "endMs": 11065,
+   "timestampMs": null,
+   "confidence": 0.887968
+  },
+  {
+   "text": " en",
+   "startMs": 11065,
+   "endMs": 11165,
+   "timestampMs": null,
+   "confidence": 0.950924
+  },
+  {
+   "text": " redes",
+   "startMs": 11165,
+   "endMs": 11425,
+   "timestampMs": null,
+   "confidence": 0.984348
+  },
+  {
+   "text": " sociales",
+   "startMs": 11425,
+   "endMs": 11865,
+   "timestampMs": null,
+   "confidence": 0.992738
+  },
+  {
+   "text": " a",
+   "startMs": 11865,
+   "endMs": 11965,
+   "timestampMs": null,
+   "confidence": 0.670135
+  },
+  {
+   "text": " ver",
+   "startMs": 11965,
+   "endMs": 12125,
+   "timestampMs": null,
+   "confidence": 0.989668
+  },
+  {
+   "text": " si",
+   "startMs": 12125,
+   "endMs": 12245,
+   "timestampMs": null,
+   "confidence": 0.986203
+  },
+  {
+   "text": " encuentras",
+   "startMs": 12245,
+   "endMs": 12801,
+   "timestampMs": null,
+   "confidence": 0.973782
+  },
+  {
+   "text": " opciones.",
+   "startMs": 12801,
+   "endMs": 13023,
+   "timestampMs": null,
+   "confidence": 0.986527
+  },
+  {
+   "text": " Cuando",
+   "startMs": 13023,
+   "endMs": 13123,
+   "timestampMs": null,
+   "confidence": 0.981953
+  },
+  {
+   "text": " por",
+   "startMs": 13123,
+   "endMs": 13306,
+   "timestampMs": null,
+   "confidence": 0.949139
+  },
+  {
+   "text": " fin",
+   "startMs": 13306,
+   "endMs": 13526,
+   "timestampMs": null,
+   "confidence": 0.991
+  },
+  {
+   "text": " encuentras",
+   "startMs": 13526,
+   "endMs": 14256,
+   "timestampMs": null,
+   "confidence": 0.990288
+  },
+  {
+   "text": " uno,",
+   "startMs": 14256,
+   "endMs": 14546,
+   "timestampMs": null,
+   "confidence": 0.936706
+  },
+  {
+   "text": " no",
+   "startMs": 14546,
+   "endMs": 14646,
+   "timestampMs": null,
+   "confidence": 0.965904
+  },
+  {
+   "text": " sabes",
+   "startMs": 14646,
+   "endMs": 14927,
+   "timestampMs": null,
+   "confidence": 0.998677
+  },
+  {
+   "text": " el",
+   "startMs": 14927,
+   "endMs": 15057,
+   "timestampMs": null,
+   "confidence": 0.911953
+  },
+  {
+   "text": " tamaño,",
+   "startMs": 15057,
+   "endMs": 15647,
+   "timestampMs": null,
+   "confidence": 0.9983
+  },
+  {
+   "text": " no",
+   "startMs": 15647,
+   "endMs": 15747,
+   "timestampMs": null,
+   "confidence": 0.893646
+  },
+  {
+   "text": " publican",
+   "startMs": 15747,
+   "endMs": 16241,
+   "timestampMs": null,
+   "confidence": 0.976023
+  },
+  {
+   "text": " precio,",
+   "startMs": 16241,
+   "endMs": 16741,
+   "timestampMs": null,
+   "confidence": 0.954014
+  },
+  {
+   "text": " y",
+   "startMs": 16741,
+   "endMs": 16841,
+   "timestampMs": null,
+   "confidence": 0.984733
+  },
+  {
+   "text": " cuando",
+   "startMs": 16841,
+   "endMs": 17221,
+   "timestampMs": null,
+   "confidence": 0.984756
+  },
+  {
+   "text": " preguntas,",
+   "startMs": 17221,
+   "endMs": 17971,
+   "timestampMs": null,
+   "confidence": 0.968973
+  },
+  {
+   "text": " la",
+   "startMs": 17971,
+   "endMs": 18111,
+   "timestampMs": null,
+   "confidence": 0.642168
+  },
+  {
+   "text": " respuesta",
+   "startMs": 18111,
+   "endMs": 18570,
+   "timestampMs": null,
+   "confidence": 0.99389
+  },
+  {
+   "text": " tarda",
+   "startMs": 18570,
+   "endMs": 18910,
+   "timestampMs": null,
+   "confidence": 0.96301
+  },
+  {
+   "text": " días",
+   "startMs": 18910,
+   "endMs": 19260,
+   "timestampMs": null,
+   "confidence": 0.993322
+  },
+  {
+   "text": " en",
+   "startMs": 19260,
+   "endMs": 19400,
+   "timestampMs": null,
+   "confidence": 0.97761
+  },
+  {
+   "text": " llegar.",
+   "startMs": 19400,
+   "endMs": 19622,
+   "timestampMs": null,
+   "confidence": 0.996141
+  },
+  {
+   "text": " Por",
+   "startMs": 19622,
+   "endMs": 19796,
+   "timestampMs": null,
+   "confidence": 0.710116
+  },
+  {
+   "text": " eso",
+   "startMs": 19796,
+   "endMs": 20046,
+   "timestampMs": null,
+   "confidence": 0.995486
+  },
+  {
+   "text": " creamos",
+   "startMs": 20046,
+   "endMs": 20736,
+   "timestampMs": null,
+   "confidence": 0.599627
+  },
+  {
+   "text": " Venue",
+   "startMs": 20736,
+   "endMs": 21036,
+   "timestampMs": null,
+   "confidence": 0.646695
+  },
+  {
+   "text": " Finder,",
+   "startMs": 21036,
+   "endMs": 21393,
+   "timestampMs": null,
+   "confidence": 0.449481
+  },
+  {
+   "text": " la",
+   "startMs": 21423,
+   "endMs": 21523,
+   "timestampMs": null,
+   "confidence": 0.967261
+  },
+  {
+   "text": " primera",
+   "startMs": 21523,
+   "endMs": 21893,
+   "timestampMs": null,
+   "confidence": 0.995915
+  },
+  {
+   "text": " plataforma",
+   "startMs": 21893,
+   "endMs": 22463,
+   "timestampMs": null,
+   "confidence": 0.994765
+  },
+  {
+   "text": " que",
+   "startMs": 22463,
+   "endMs": 22623,
+   "timestampMs": null,
+   "confidence": 0.993854
+  },
+  {
+   "text": " busca",
+   "startMs": 22623,
+   "endMs": 22913,
+   "timestampMs": null,
+   "confidence": 0.991439
+  },
+  {
+   "text": " dar",
+   "startMs": 22913,
+   "endMs": 23083,
+   "timestampMs": null,
+   "confidence": 0.988176
+  },
+  {
+   "text": " transparencia",
+   "startMs": 23083,
+   "endMs": 23823,
+   "timestampMs": null,
+   "confidence": 0.987929
+  },
+  {
+   "text": " y",
+   "startMs": 23823,
+   "endMs": 23923,
+   "timestampMs": null,
+   "confidence": 0.997272
+  },
+  {
+   "text": " claridad",
+   "startMs": 23923,
+   "endMs": 24313,
+   "timestampMs": null,
+   "confidence": 0.992159
+  },
+  {
+   "text": " al",
+   "startMs": 24313,
+   "endMs": 24413,
+   "timestampMs": null,
+   "confidence": 0.986237
+  },
+  {
+   "text": " mercado",
+   "startMs": 24413,
+   "endMs": 24813,
+   "timestampMs": null,
+   "confidence": 0.991815
+  },
+  {
+   "text": " de",
+   "startMs": 24813,
+   "endMs": 24923,
+   "timestampMs": null,
+   "confidence": 0.990758
+  },
+  {
+   "text": " eventos,",
+   "startMs": 24923,
+   "endMs": 25588,
+   "timestampMs": null,
+   "confidence": 0.986801
+  },
+  {
+   "text": " presentando",
+   "startMs": 25588,
+   "endMs": 26321,
+   "timestampMs": null,
+   "confidence": 0.991966
+  },
+  {
+   "text": " espacios",
+   "startMs": 26321,
+   "endMs": 26939,
+   "timestampMs": null,
+   "confidence": 0.982281
+  },
+  {
+   "text": " curados",
+   "startMs": 26939,
+   "endMs": 27375,
+   "timestampMs": null,
+   "confidence": 0.980514
+  },
+  {
+   "text": " y",
+   "startMs": 27375,
+   "endMs": 27475,
+   "timestampMs": null,
+   "confidence": 0.99636
+  },
+  {
+   "text": " verificados",
+   "startMs": 27475,
+   "endMs": 28335,
+   "timestampMs": null,
+   "confidence": 0.997168
+  },
+  {
+   "text": " por",
+   "startMs": 28335,
+   "endMs": 28575,
+   "timestampMs": null,
+   "confidence": 0.990172
+  },
+  {
+   "text": " expertos,",
+   "startMs": 28575,
+   "endMs": 29003,
+   "timestampMs": null,
+   "confidence": 0.978981
+  },
+  {
+   "text": " donde",
+   "startMs": 29003,
+   "endMs": 29214,
+   "timestampMs": null,
+   "confidence": 0.975781
+  },
+  {
+   "text": " puedes",
+   "startMs": 29214,
+   "endMs": 29684,
+   "timestampMs": null,
+   "confidence": 0.94229
+  },
+  {
+   "text": " ver",
+   "startMs": 29684,
+   "endMs": 29934,
+   "timestampMs": null,
+   "confidence": 0.99768
+  },
+  {
+   "text": " información",
+   "startMs": 29934,
+   "endMs": 30874,
+   "timestampMs": null,
+   "confidence": 0.990881
+  },
+  {
+   "text": " detallada",
+   "startMs": 30874,
+   "endMs": 31262,
+   "timestampMs": null,
+   "confidence": 0.99422
+  },
+  {
+   "text": " y",
+   "startMs": 31262,
+   "endMs": 31362,
+   "timestampMs": null,
+   "confidence": 0.98313
+  },
+  {
+   "text": " fotos",
+   "startMs": 31362,
+   "endMs": 31752,
+   "timestampMs": null,
+   "confidence": 0.997495
+  },
+  {
+   "text": " de",
+   "startMs": 31752,
+   "endMs": 31902,
+   "timestampMs": null,
+   "confidence": 0.996155
+  },
+  {
+   "text": " cada",
+   "startMs": 31902,
+   "endMs": 32182,
+   "timestampMs": null,
+   "confidence": 0.999073
+  },
+  {
+   "text": " uno.",
+   "startMs": 32182,
+   "endMs": 32282,
+   "timestampMs": null,
+   "confidence": 0.997234
+  },
+  {
+   "text": " Filtrar",
+   "startMs": 32282,
+   "endMs": 32595,
+   "timestampMs": null,
+   "confidence": 0.925466
+  },
+  {
+   "text": " para",
+   "startMs": 32595,
+   "endMs": 32885,
+   "timestampMs": null,
+   "confidence": 0.992839
+  },
+  {
+   "text": " encontrar",
+   "startMs": 32885,
+   "endMs": 33515,
+   "timestampMs": null,
+   "confidence": 0.994702
+  },
+  {
+   "text": " lo",
+   "startMs": 33515,
+   "endMs": 33655,
+   "timestampMs": null,
+   "confidence": 0.997432
+  },
+  {
+   "text": " que",
+   "startMs": 33655,
+   "endMs": 33865,
+   "timestampMs": null,
+   "confidence": 0.995725
+  },
+  {
+   "text": " buscas",
+   "startMs": 33865,
+   "endMs": 34182,
+   "timestampMs": null,
+   "confidence": 0.98259
+  },
+  {
+   "text": " más",
+   "startMs": 34182,
+   "endMs": 34462,
+   "timestampMs": null,
+   "confidence": 0.949258
+  },
+  {
+   "text": " rápido",
+   "startMs": 34462,
+   "endMs": 34686,
+   "timestampMs": null,
+   "confidence": 0.996968
+  },
+  {
+   "text": " y",
+   "startMs": 34686,
+   "endMs": 34786,
+   "timestampMs": null,
+   "confidence": 0.442229
+  },
+  {
+   "text": " solicitar",
+   "startMs": 34786,
+   "endMs": 35205,
+   "timestampMs": null,
+   "confidence": 0.979991
+  },
+  {
+   "text": " cotización",
+   "startMs": 35205,
+   "endMs": 36015,
+   "timestampMs": null,
+   "confidence": 0.978488
+  },
+  {
+   "text": " al",
+   "startMs": 36015,
+   "endMs": 36145,
+   "timestampMs": null,
+   "confidence": 0.977924
+  },
+  {
+   "text": " instante.",
+   "startMs": 36145,
+   "endMs": 36651,
+   "timestampMs": null,
+   "confidence": 0.988171
+  },
+  {
+   "text": " Estamos",
+   "startMs": 36651,
+   "endMs": 36992,
+   "timestampMs": null,
+   "confidence": 0.977853
+  },
+  {
+   "text": " construyendo",
+   "startMs": 36992,
+   "endMs": 37712,
+   "timestampMs": null,
+   "confidence": 0.995739
+  },
+  {
+   "text": " el",
+   "startMs": 37712,
+   "endMs": 37842,
+   "timestampMs": null,
+   "confidence": 0.995463
+  },
+  {
+   "text": " primer",
+   "startMs": 37842,
+   "endMs": 38202,
+   "timestampMs": null,
+   "confidence": 0.990016
+  },
+  {
+   "text": " booking",
+   "startMs": 38202,
+   "endMs": 38632,
+   "timestampMs": null,
+   "confidence": 0.486629
+  },
+  {
+   "text": " de",
+   "startMs": 38632,
+   "endMs": 38752,
+   "timestampMs": null,
+   "confidence": 0.948429
+  },
+  {
+   "text": " eventos",
+   "startMs": 38752,
+   "endMs": 39172,
+   "timestampMs": null,
+   "confidence": 0.984545
+  },
+  {
+   "text": " de",
+   "startMs": 39172,
+   "endMs": 39292,
+   "timestampMs": null,
+   "confidence": 0.94709
+  },
+  {
+   "text": " República",
+   "startMs": 39292,
+   "endMs": 39902,
+   "timestampMs": null,
+   "confidence": 0.979677
+  },
+  {
+   "text": " Dominicana,",
+   "startMs": 39902,
+   "endMs": 40426,
+   "timestampMs": null,
+   "confidence": 0.99729
+  },
+  {
+   "text": " con",
+   "startMs": 40426,
+   "endMs": 40526,
+   "timestampMs": null,
+   "confidence": 0.996405
+  },
+  {
+   "text": " más",
+   "startMs": 40526,
+   "endMs": 40820,
+   "timestampMs": null,
+   "confidence": 0.985222
+  },
+  {
+   "text": " de",
+   "startMs": 40820,
+   "endMs": 40970,
+   "timestampMs": null,
+   "confidence": 0.997752
+  },
+  {
+   "text": " 140",
+   "startMs": 40970,
+   "endMs": 41640,
+   "timestampMs": null,
+   "confidence": 0.992074
+  },
+  {
+   "text": " espacios",
+   "startMs": 41640,
+   "endMs": 42126,
+   "timestampMs": null,
+   "confidence": 0.967399
+  },
+  {
+   "text": " en",
+   "startMs": 42126,
+   "endMs": 42226,
+   "timestampMs": null,
+   "confidence": 0.980984
+  },
+  {
+   "text": " Santo",
+   "startMs": 42226,
+   "endMs": 42534,
+   "timestampMs": null,
+   "confidence": 0.995399
+  },
+  {
+   "text": " Domingo,",
+   "startMs": 42534,
+   "endMs": 42993,
+   "timestampMs": null,
+   "confidence": 0.998736
+  },
+  {
+   "text": " buscando",
+   "startMs": 42993,
+   "endMs": 43498,
+   "timestampMs": null,
+   "confidence": 0.4885
+  },
+  {
+   "text": " crecer",
+   "startMs": 43498,
+   "endMs": 43938,
+   "timestampMs": null,
+   "confidence": 0.995169
+  },
+  {
+   "text": " a",
+   "startMs": 43938,
+   "endMs": 44038,
+   "timestampMs": null,
+   "confidence": 0.984434
+  },
+  {
+   "text": " nivel",
+   "startMs": 44038,
+   "endMs": 44378,
+   "timestampMs": null,
+   "confidence": 0.998376
+  },
+  {
+   "text": " nacional",
+   "startMs": 44378,
+   "endMs": 44968,
+   "timestampMs": null,
+   "confidence": 0.996155
+  },
+  {
+   "text": " e",
+   "startMs": 44968,
+   "endMs": 45068,
+   "timestampMs": null,
+   "confidence": 0.972209
+  },
+  {
+   "text": " internacional.",
+   "startMs": 45068,
+   "endMs": 45979,
+   "timestampMs": null,
+   "confidence": 0.997729
+  },
+  {
+   "text": " Impúlsanos",
+   "startMs": 45979,
+   "endMs": 46749,
+   "timestampMs": null,
+   "confidence": 0.699874
+  },
+  {
+   "text": " con",
+   "startMs": 46749,
+   "endMs": 46979,
+   "timestampMs": null,
+   "confidence": 0.982499
+  },
+  {
+   "text": " tu",
+   "startMs": 46979,
+   "endMs": 47139,
+   "timestampMs": null,
+   "confidence": 0.985942
+  },
+  {
+   "text": " like",
+   "startMs": 47139,
+   "endMs": 47439,
+   "timestampMs": null,
+   "confidence": 0.601136
+  },
+  {
+   "text": " y",
+   "startMs": 47439,
+   "endMs": 47539,
+   "timestampMs": null,
+   "confidence": 0.919565
+  },
+  {
+   "text": " ayúdanos",
+   "startMs": 47539,
+   "endMs": 48189,
+   "timestampMs": null,
+   "confidence": 0.844098
+  },
+  {
+   "text": " a",
+   "startMs": 48189,
+   "endMs": 48289,
+   "timestampMs": null,
+   "confidence": 0.943095
+  },
+  {
+   "text": " hacerlo",
+   "startMs": 48289,
+   "endMs": 48615,
+   "timestampMs": null,
+   "confidence": 0.609024
+  },
+  {
+   "text": " realidad.",
+   "startMs": 48615,
+   "endMs": 48765,
+   "timestampMs": null,
+   "confidence": 0.993208
+  }
+ ]
+}

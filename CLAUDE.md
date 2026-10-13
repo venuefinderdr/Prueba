@@ -7,7 +7,20 @@ Este repo es un proyecto de Remotion (plantilla TikTok) para editar vídeos vert
 ## Estado
 - Paso 1 (preparar todo): hecho. Node 22, ffmpeg, whisper.cpp 1.6.0 (`./whisper.cpp`, gitignored,
   modelo `medium` en español; se descarga en la primera transcripción), skills oficiales en `.claude/skills/`.
-- Pasos 2–4: pendientes de `referencia.mp4` y `mi-video.mp4` (ponlos en la raíz; están en .gitignore).
+- Paso 2: hecho → `estilo.md`.
+- Paso 3: borrador v1 → composición `VenueReel` (`src/VenueReel/`), render en `out/borrador-v1.mp4`.
+- Paso 4: correcciones del usuario → añadir a `estilo.md` §10.
+
+## Pipeline del reel (VenueReel)
+1. `public/mi-video.mp4`: original convertido (HDR→SDR, 1080x1920, 30 fps) desde `mi-video.mov`.
+2. `node sub.mjs public/mi-video.mp4` → `public/mi-video.json` (Whisper, palabras).
+3. `python3 -I scripts/cortes.py public/mi-video.mp4 public/mi-video.json public/edit.json`
+   → segmentos sin silencios > 0,3 s + subtítulos re-mapeados (corrige errores de Whisper en `FIXES`).
+4. `python3 -I scripts/recorte.py public/mi-video.mp4 public/edit.json` → `public/talk.webm`
+   (cortes + croma verde → VP9 con alfa) y `public/voz.wav` (−14 LUFS).
+5. B-roll de venues en `public/broll/` (1080x1920 SDR). Tiempos, titulares, encuadres y palabras clave en
+   `src/VenueReel/timeline.ts` (segundos del vídeo editado).
+Medios pesados (`public/broll`, `talk.webm`, `voz.wav`, `mi-video.*`) no van a git.
 
 ## Convenciones
 - `marca.md` (raíz) = marca Venue Finder DR (colores, Plus Jakarta Sans, logo en `public/brand/`).
