@@ -27,7 +27,7 @@ el resto es interfaz de Instagram). [SUPOSICIÓN] = inferido, no medido.
 
 ## 3. Subtítulos (voz, palabra a palabra)
 - Fuente: sans-serif **cursiva**, peso regular, blanca, sin caja ni contorno; sombra suave. [SUPOSICIÓN: tipo Helvetica Neue Italic]
-  → con nuestra marca: **Plus Jakarta Sans 500 italic**.
+  → anulado: sin subtítulos (ver §10).
 - Tamaño: **~46 px** en 1080x1920 (pequeño; no compite con los titulares).
 - Posición: centrados en horizontal, **~55 % de la altura** (≈ y 1050 px), por debajo de la cara.
 - Palabras por bloque: **1–3** (p. ej. "tenía ritmo.", "qué instrumento", "Tu contenido tenía").
