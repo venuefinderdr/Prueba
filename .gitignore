@@ -9,7 +9,7 @@ whisper.cpp
 temp
 
 # Raw footage and analysis frames stay local (too big for git)
-referencia.*
+referencia*.*
 mi-video.*
 analisis
 broll
