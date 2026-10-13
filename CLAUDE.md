@@ -8,7 +8,7 @@ Este repo es un proyecto de Remotion (plantilla TikTok) para editar vídeos vert
 - Paso 1 (preparar todo): hecho. Node 22, ffmpeg, whisper.cpp 1.6.0 (`./whisper.cpp`, gitignored,
   modelo `medium` en español; se descarga en la primera transcripción), skills oficiales en `.claude/skills/`.
 - Paso 2: hecho → `estilo.md`.
-- Paso 3: borrador v1 → composición `VenueReel` (`src/VenueReel/`). v3 (texto cinético con bloque dorado, b-roll desde la mejor vista) en `out/borrador-v3.mp4`.
+- Paso 3: borrador v1 → composición `VenueReel` (`src/VenueReel/`). v4 (+ grabaciones de la web e Instagram, iconos) en `out/borrador-v4.mp4`.
 - Paso 4: correcciones del usuario → añadir a `estilo.md` §10.
 
 ## Pipeline del reel (VenueReel)
@@ -18,7 +18,8 @@ Este repo es un proyecto de Remotion (plantilla TikTok) para editar vídeos vert
    → segmentos sin silencios > 0,3 s + subtítulos re-mapeados (corrige errores de Whisper en `FIXES`).
 4. `python3 -I scripts/recorte.py public/mi-video.mp4 public/edit.json` → `public/talk.webm`
    (cortes + croma verde → VP9 con alfa) y `public/voz.wav` (−14 LUFS).
-5. B-roll de venues en `public/broll/` (1080x1920 SDR). Tiempos, titulares, encuadres y palabras clave en
+5. B-roll de venues en `public/broll/` (1080x1920 SDR); grabaciones de la web aceleradas x2 con ffmpeg
+   (`plataforma-busqueda.mp4` = s 13–25, `plataforma-ficha.mp4` = s 40–47 de la grabación original). Tiempos, titulares, encuadres y palabras clave en
    `src/VenueReel/timeline.ts` (segundos del vídeo editado).
 Medios pesados (`public/broll`, `talk.webm`, `voz.wav`, `mi-video.*`) y fuentes con licencia personal
 (`public/fonts/marca/`, copiar Claudia.woff2 ahí) no van a git.

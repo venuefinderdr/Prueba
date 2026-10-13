@@ -101,3 +101,12 @@ el resto es interfaz de Instagram). [SUPOSICIÓN] = inferido, no medido.
 - 2026-10-13 · **B-roll: usar el tramo con la vista más impresionante**, normalmente **los primeros segundos**
   del clip (`startAt: 0`). Saltar solo si al inicio algo tapa la vista (p. ej. IMG_2868 desde 1 s).
   Mejor una vista distinta por hueco; repetir clip solo con otro encuadre.
+- 2026-10-13 · **Menos tiempo a cámara** ("me veo mucho, se siente aburrido"): cubrir con material cada
+  vez que el guion nombra algo mostrable. Persona sola en pantalla ≤ 3 s seguidos, salvo que haya un icono.
+  - Cuando se habla de la plataforma → **grabación de la web** (x2, desde el s 13 de la grabación actual),
+    enmarcada (borde dorado 3 px, esquinas 28 px) sobre marino, debajo del texto.
+  - "Redes sociales" → grabación del móvil con Instagram, a pantalla completa (x2).
+- 2026-10-13 · **Iconos** (referencia del Banco Popular, `referencia3-popular.mp4`): iconos de trazo en
+  dorado que aparecen junto a la persona con un "pop" elástico (spring, damping 11) y salen en 0,15 s.
+  Uno por idea: reloj (tiempo), billete (precio/dinero), regla (tamaño), reloj de arena (espera),
+  calendario (reservas), ubicación (espacios), corazón (like). En el lado libre del encuadre, sin tapar la cara.

@@ -15,8 +15,16 @@ import edit from "../../public/edit.json";
 import { CREAM, NAVY } from "./brand";
 import { BRoll } from "./BRoll";
 import { loadBrandFonts } from "./fonts";
+import { Icons } from "./Icons";
 import { KineticText } from "./KineticText";
-import { BROLL, END_CARD_SEC, FLASHES, FRAMINGS, REVEAL_AT } from "./timeline";
+import {
+  BROLL,
+  END_CARD_SEC,
+  FLASHES,
+  FRAMINGS,
+  ICONS,
+  REVEAL_AT,
+} from "./timeline";
 
 loadBrandFonts();
 
@@ -127,6 +135,7 @@ export const VenueReel: React.FC = () => {
       {BROLL.map((clip, i) => (
         <BRoll key={i} clip={clip} />
       ))}
+      <Icons cues={ICONS} />
       <KineticText words={words} endMs={voiceEndMs} isDark={isDark} />
       {FLASHES.map((t) => (
         <Flash key={t} at={t} />

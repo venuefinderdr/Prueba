@@ -6,6 +6,7 @@ export type BRollClip = {
   from: number;
   to: number;
   startAt?: number; // segundo del clip original en el que empieza
+  screen?: boolean; // grabación de la web: enmarcada sobre marino en vez de a pantalla completa
 };
 
 // Cada clip arranca en su vista más impresionante (normalmente los primeros segundos)
@@ -17,17 +18,53 @@ export const BROLL: BRollClip[] = [
   // "...tu boda, cumpleaños o fiestas"
   { src: "broll/IMG_5279.mp4", from: 5.95, to: 6.9, startAt: 0 }, // ceremonia frente al mar
   { src: "broll/IMG_5350.jpg", from: 6.9, to: 7.81 },
+  // "navegando en redes sociales a ver si encuentras opciones" (grabación de Instagram, x2)
+  { src: "broll/instagram.mp4", from: 10.45, to: 13.02 },
+  // "Por eso creamos Venue Finder... al mercado de eventos" (web actual desde el s 13, x2)
+  {
+    src: "broll/plataforma-busqueda.mp4",
+    from: 19.62,
+    to: 25.59,
+    screen: true,
+  },
   // "espacios curados y verificados por expertos"
   { src: "broll/IMG_6721.mp4", from: 25.59, to: 27.3, startAt: 0 }, // ventanal en arco
   { src: "broll/IMG_2868.mp4", from: 27.3, to: 29.0, startAt: 1 }, // patio colonial (en 0 s tapa una columna)
-  // "información detallada y fotos de cada uno"
-  { src: "broll/IMG_3555.jpg", from: 29.0, to: 30.6 },
-  { src: "broll/IMG_6297.jpg", from: 30.6, to: 32.26 },
+  // "información detallada y fotos de cada uno" (ficha de un venue en la web, x2)
+  { src: "broll/plataforma-ficha.mp4", from: 29.0, to: 32.26, screen: true },
   // "Filtrar... y solicitar cotización al instante" (tapa el zoom de cámara)
   { src: "broll/IMG_6702.mp4", from: 32.26, to: 34.4, startAt: 0 }, // jardín frente a la iglesia
-  { src: "broll/IMG_5279.mp4", from: 34.4, to: 36.65, startAt: 1 }, // terraza al mar
+  { src: "broll/IMG_3555.jpg", from: 34.4, to: 36.65 }, // patio con arcos
   // "buscando crecer a nivel nacional e internacional"
   { src: "broll/IMG_5316.mp4", from: 42.99, to: 45.98, startAt: 0.5 }, // piscina infinita
+];
+
+// Iconos que aparecen junto a la persona (estilo referencia Banco Popular).
+// x/y en px del lienzo 1080x1920; en plano medio la persona está a la derecha → iconos a la izquierda.
+export type IconName =
+  | "clock"
+  | "money"
+  | "ruler"
+  | "hourglass"
+  | "calendar"
+  | "pin"
+  | "heart";
+export type IconCue = {
+  icon: IconName;
+  from: number;
+  to: number;
+  x: number;
+  y: number;
+  size?: number;
+};
+export const ICONS: IconCue[] = [
+  { icon: "clock", from: 8.45, to: 10.45, x: 30, y: 600, size: 230 }, // "horas, días y hasta semanas"
+  { icon: "ruler", from: 15.0, to: 16.2, x: 30, y: 600, size: 230 }, // "no sabes el tamaño"
+  { icon: "money", from: 16.2, to: 17.9, x: 30, y: 600, size: 230 }, // "no publican precio"
+  { icon: "hourglass", from: 18.5, to: 19.62, x: 30, y: 600, size: 230 }, // "tarda días en llegar"
+  { icon: "calendar", from: 38.1, to: 40.9, x: 690, y: 820, size: 280 }, // "el primer booking"
+  { icon: "pin", from: 40.9, to: 42.99, x: 690, y: 820, size: 280 }, // "más de 140 espacios"
+  { icon: "heart", from: 47.0, to: 48.77, x: 690, y: 820, size: 280 }, // "con tu like"
 ];
 
 // Fondo detrás de la persona: crema en el problema, marino desde "Por eso creamos Venue Finder"
