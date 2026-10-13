@@ -47,6 +47,13 @@ export const BRoll: React.FC<{ clip: BRollClip }> = ({ clip }) => {
           />
         )}
       </PushIn>
+      {/* Degradado marino arriba para que el texto se lea sobre b-roll luminoso */}
+      <AbsoluteFill
+        style={{
+          background:
+            "linear-gradient(180deg, rgba(17,32,58,0.75) 0%, rgba(17,32,58,0.35) 22%, rgba(17,32,58,0) 38%)",
+        }}
+      />
     </Sequence>
   );
 };

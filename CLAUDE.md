@@ -8,7 +8,7 @@ Este repo es un proyecto de Remotion (plantilla TikTok) para editar vídeos vert
 - Paso 1 (preparar todo): hecho. Node 22, ffmpeg, whisper.cpp 1.6.0 (`./whisper.cpp`, gitignored,
   modelo `medium` en español; se descarga en la primera transcripción), skills oficiales en `.claude/skills/`.
 - Paso 2: hecho → `estilo.md`.
-- Paso 3: borrador v1 → composición `VenueReel` (`src/VenueReel/`), render en `out/borrador-v1.mp4`.
+- Paso 3: borrador v1 → composición `VenueReel` (`src/VenueReel/`). v2 (texto cinético, sin subtítulos) en `out/borrador-v2.mp4`.
 - Paso 4: correcciones del usuario → añadir a `estilo.md` §10.
 
 ## Pipeline del reel (VenueReel)
@@ -20,10 +20,11 @@ Este repo es un proyecto de Remotion (plantilla TikTok) para editar vídeos vert
    (cortes + croma verde → VP9 con alfa) y `public/voz.wav` (−14 LUFS).
 5. B-roll de venues en `public/broll/` (1080x1920 SDR). Tiempos, titulares, encuadres y palabras clave en
    `src/VenueReel/timeline.ts` (segundos del vídeo editado).
-Medios pesados (`public/broll`, `talk.webm`, `voz.wav`, `mi-video.*`) no van a git.
+Medios pesados (`public/broll`, `talk.webm`, `voz.wav`, `mi-video.*`) y fuentes con licencia personal
+(`public/fonts/marca/`, copiar Claudia.woff2 ahí) no van a git.
 
 ## Convenciones
-- `marca.md` (raíz) = marca Venue Finder DR (colores, Safira March + Poppins, logo en `public/brand/`).
+- `marca.md` (raíz) = marca Venue Finder DR (colores, Claudia + Poppins, logo en `public/brand/`).
   Manda sobre `estilo.md` en colores, fuentes y logo; `estilo.md` manda en ritmo y edición.
 - `estilo.md` (raíz) es la fuente de verdad del estilo: valores concretos, `[SUPOSICIÓN]` donde se infiera.
   Cada corrección que el usuario apruebe se añade ahí (paso 4).

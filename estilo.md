@@ -84,5 +84,15 @@ el resto es interfaz de Instagram). [SUPOSICIÓN] = inferido, no medido.
 ## 10. Correcciones del usuario
 - 2026-10-13 · **Sin subtítulos.** Un solo tipo de texto en pantalla: los titulares cinéticos
   (anula la sección 3 y los subtítulos palabra a palabra del prompt original).
-- 2026-10-13 · **Tipografía:** títulos en Safira March, textos en Poppins (ver `marca.md`).
-- 2026-10-13 · **Aparición de las palabras:** seguir `referencia2.mp4` (pendiente de analizar).
+- 2026-10-13 · **Tipografía:** palabra grande en **Claudia** (la del "venue" del logo), texto en **Poppins**
+  (ver `marca.md`). La manuscrita (MADE TheArtist Script, el "finder" del logo) solo en el logo.
+- 2026-10-13 · **Texto cinético según `referencia2.mp4`** (sustituye a titulares + subtítulos):
+  - Todo lo que se dice aparece en pantalla, **frase a frase** (2–6 palabras), sincronizado con la voz.
+  - Cada frase = **línea pequeña** (Poppins 500, ~60 px) + **palabra grande** (Claudia, ~150 px); el orden
+    puede invertirse ("tu" grande / "apellido" pequeño). La palabra grande es la clave de la frase.
+  - Cada palabra entra en su momento: **desenfocada → nítida en ~0,15 s** (medido a 10 fps en la referencia).
+  - La frase entera sale con **desenfoque + fundido en ~0,12 s** y entra la siguiente sin hueco.
+  - Posición: **arriba a la izquierda** (x 80 px, y 200 px en 1080x1920), alineado a la izquierda.
+  - Color: crema + palabra grande dorada sobre marino/b-roll; marino sobre fondo crema.
+  - Sobre b-roll luminoso: degradado marino arriba (75 % → 0 % en el primer 38 % de la altura).
+  - Frases y palabra grande se escriben en `src/VenueReel/phrases.ts` (`*palabra*` = grande).

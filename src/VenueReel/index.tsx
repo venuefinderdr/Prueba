@@ -12,25 +12,22 @@ import {
   useVideoConfig,
 } from "remotion";
 import edit from "../../public/edit.json";
-import { CREAM, GOLD, NAVY, TITLE_FONT } from "./brand";
+import { CREAM, NAVY } from "./brand";
 import { BRoll } from "./BRoll";
 import { loadBrandFonts } from "./fonts";
-import { HeadlineSeq } from "./Headline";
-import {
-  BROLL,
-  CTA_FROM,
-  FLASHES,
-  FRAMINGS,
-  HEADLINES,
-  LOGO_REVEAL,
-  REVEAL_AT,
-} from "./timeline";
+import { KineticText } from "./KineticText";
+import { BROLL, END_CARD_SEC, FLASHES, FRAMINGS, REVEAL_AT } from "./timeline";
 
 loadBrandFonts();
 
-export const VENUE_REEL_DURATION_SEC = edit.durationSec;
+export const VENUE_REEL_DURATION_SEC = edit.durationSec + END_CARD_SEC;
+
+const words = edit.captions.map((c) => ({ text: c.text, startMs: c.startMs }));
+const voiceEndMs = Math.round(edit.durationSec * 1000);
 
 const inBRoll = (t: number) => BROLL.some((c) => t >= c.from && t < c.to);
+// Texto oscuro solo sobre el fondo crema (antes del cambio a marino y fuera del b-roll)
+const isDark = (t: number) => t < REVEAL_AT && !inBRoll(t);
 
 // Fondo detrás de la persona sin croma: crema (problema) → marino (solución)
 const Background: React.FC = () => {
@@ -87,64 +84,42 @@ const FlashInner: React.FC<{ len: number }> = ({ len }) => {
   return <AbsoluteFill style={{ background: CREAM, opacity: o }} />;
 };
 
-const Logo: React.FC<{ width: number; top: number }> = ({ width, top }) => {
+// Cierre: fundido a marino con el logo
+const EndCard: React.FC = () => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
+  const bg = interpolate(frame, [0, 0.3 * fps], [0, 1], {
+    extrapolateRight: "clamp",
+  });
   const s = spring({
-    frame,
+    frame: frame - Math.round(0.15 * fps),
     fps,
     config: { damping: 200 },
-    durationInFrames: Math.round(0.5 * fps),
   });
   return (
-    <AbsoluteFill style={{ top, bottom: "auto", alignItems: "center" }}>
+    <AbsoluteFill
+      style={{
+        background: NAVY,
+        opacity: bg,
+        justifyContent: "center",
+        alignItems: "center",
+      }}
+    >
       <Img
         src={staticFile("brand/logo-venuefinder-dorado.png")}
         style={{
-          width,
+          width: 760,
           opacity: s,
           filter: `blur(${(1 - s) * 10}px)`,
-          transform: `scale(${0.92 + s * 0.08})`,
+          transform: `scale(${0.94 + s * 0.06})`,
         }}
       />
     </AbsoluteFill>
   );
 };
 
-const CallToAction: React.FC = () => {
-  const frame = useCurrentFrame();
-  const { fps } = useVideoConfig();
-  const s = spring({
-    frame: frame - Math.round(0.3 * fps),
-    fps,
-    config: { damping: 14 },
-  });
-  return (
-    <>
-      <Logo width={640} top={170} />
-      <AbsoluteFill style={{ top: 360, bottom: "auto", alignItems: "center" }}>
-        <span
-          style={{
-            fontFamily: TITLE_FONT,
-            fontStyle: "italic",
-            fontWeight: 800,
-            fontSize: 96,
-            letterSpacing: -3,
-            color: NAVY,
-            background: GOLD,
-            padding: "4px 34px 14px",
-            transform: `scale(${s})`,
-          }}
-        >
-          Dale like
-        </span>
-      </AbsoluteFill>
-    </>
-  );
-};
-
 export const VenueReel: React.FC = () => {
-  const { fps, durationInFrames } = useVideoConfig();
+  const { fps } = useVideoConfig();
   return (
     <AbsoluteFill style={{ background: NAVY }}>
       <Background />
@@ -152,28 +127,16 @@ export const VenueReel: React.FC = () => {
       {BROLL.map((clip, i) => (
         <BRoll key={i} clip={clip} />
       ))}
-      {HEADLINES.map((h, i) => (
-        <HeadlineSeq
-          key={i}
-          headline={h}
-          dark={h.from < REVEAL_AT && !inBRoll(h.from + 0.5)}
-        />
-      ))}
-      <Sequence
-        from={Math.round(LOGO_REVEAL.from * fps)}
-        durationInFrames={Math.round((LOGO_REVEAL.to - LOGO_REVEAL.from) * fps)}
-      >
-        <Logo width={820} top={260} />
-      </Sequence>
-      <Sequence
-        from={Math.round(CTA_FROM * fps)}
-        durationInFrames={durationInFrames - Math.round(CTA_FROM * fps)}
-      >
-        <CallToAction />
-      </Sequence>
+      <KineticText words={words} endMs={voiceEndMs} isDark={isDark} />
       {FLASHES.map((t) => (
         <Flash key={t} at={t} />
       ))}
+      <Sequence
+        from={Math.round(edit.durationSec * fps)}
+        durationInFrames={Math.round(END_CARD_SEC * fps)}
+      >
+        <EndCard />
+      </Sequence>
       <Audio src={staticFile("voz.wav")} />
     </AbsoluteFill>
   );

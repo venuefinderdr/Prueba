@@ -12,11 +12,10 @@ const POPPINS = [
   { file: "poppins-latin-400-italic.woff2", weight: "400", style: "italic" },
 ];
 
-// Safira March no es libre: se usa si su archivo está en public/fonts/ (SafiraMarch.otf/.ttf/.woff2/.woff)
-const findSafira = () =>
-  getStaticFiles().find((f) =>
-    /^fonts\/safira[-_ ]?march.*\.(otf|ttf|woff2?)$/i.test(f.name),
-  );
+// Claudia (fuente del logo) tiene licencia de uso personal: no va en git;
+// se usa si su archivo está en public/fonts/marca/
+const findClaudia = () =>
+  getStaticFiles().find((f) => f.name === "fonts/marca/Claudia.woff2");
 
 let loaded = false;
 
@@ -33,12 +32,12 @@ export const loadBrandFonts = () => {
         style,
       }),
   );
-  const safira = findSafira();
-  if (safira) {
-    faces.push(new FontFace("Safira March", `url('${safira.src}')`));
+  const claudia = findClaudia();
+  if (claudia) {
+    faces.push(new FontFace("Claudia", `url('${claudia.src}')`));
   } else {
     console.warn(
-      "Safira March no encontrada en public/fonts/: se usa Georgia como sustituta",
+      "Claudia no encontrada en public/fonts/marca/: se usa Georgia como sustituta",
     );
   }
   Promise.all(

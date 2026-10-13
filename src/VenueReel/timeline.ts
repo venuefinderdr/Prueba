@@ -8,13 +8,6 @@ export type BRollClip = {
   startAt?: number; // segundo del clip original en el que empieza
 };
 
-export type HeadlineLine = {
-  text: string;
-  size: "sm" | "lg" | "xs";
-  highlight?: boolean;
-};
-export type Headline = { from: number; to: number; lines: HeadlineLine[] };
-
 export const BROLL: BRollClip[] = [
   // Gancho: "¿Has pasado horas buscando el lugar perfecto...?"
   { src: "broll/IMG_6062.mp4", from: 0, to: 1.5, startAt: 2 },
@@ -36,97 +29,10 @@ export const BROLL: BRollClip[] = [
   { src: "broll/IMG_6062.mp4", from: 42.99, to: 45.98, startAt: 4.5 },
 ];
 
-export const HEADLINES: Headline[] = [
-  {
-    from: 0.15,
-    to: 4.4,
-    lines: [
-      { text: "¿Horas buscando", size: "sm" },
-      { text: "el lugar", size: "sm" },
-      { text: "PERFECTO?", size: "lg", highlight: true },
-    ],
-  },
-  {
-    from: 7.85,
-    to: 12.9,
-    lines: [
-      { text: "horas, días", size: "sm" },
-      { text: "y hasta", size: "sm" },
-      { text: "SEMANAS", size: "lg", highlight: true },
-    ],
-  },
-  {
-    from: 14.55,
-    to: 17.9,
-    lines: [
-      { text: "¿Tamaño?", size: "lg" },
-      { text: "¿Precio?", size: "lg", highlight: true },
-    ],
-  },
-  {
-    from: 17.97,
-    to: 19.55,
-    lines: [
-      { text: "la respuesta tarda", size: "sm" },
-      { text: "DÍAS", size: "lg", highlight: true },
-    ],
-  },
-  {
-    from: 22.6,
-    to: 25.5,
-    lines: [
-      { text: "transparencia y", size: "sm" },
-      { text: "CLARIDAD", size: "lg", highlight: true },
-    ],
-  },
-  {
-    from: 26.0,
-    to: 28.95,
-    lines: [
-      { text: "curados y", size: "sm" },
-      { text: "VERIFICADOS", size: "lg", highlight: true },
-    ],
-  },
-  {
-    from: 34.5,
-    to: 36.6,
-    lines: [
-      { text: "cotización", size: "sm" },
-      { text: "AL INSTANTE", size: "lg", highlight: true },
-    ],
-  },
-  {
-    from: 37.4,
-    to: 40.35,
-    lines: [
-      { text: "el primer", size: "sm" },
-      { text: "BOOKING", size: "lg", highlight: true },
-      { text: "de eventos en RD", size: "xs" },
-    ],
-  },
-  {
-    from: 40.43,
-    to: 42.95,
-    lines: [
-      { text: "+140", size: "lg", highlight: true },
-      { text: "espacios en Santo Domingo", size: "sm" },
-    ],
-  },
-  {
-    from: 44.2,
-    to: 45.95,
-    lines: [
-      { text: "nacional e", size: "sm" },
-      { text: "INTERNACIONAL", size: "lg", highlight: true },
-    ],
-  },
-];
-
 // Fondo detrás de la persona: crema en el problema, marino desde "Por eso creamos Venue Finder"
 export const REVEAL_AT = 19.62;
-// Logo grande en la presentación y en el cierre
-export const LOGO_REVEAL = { from: 19.62, to: 21.4 };
-export const CTA_FROM = 45.98;
+// Cierre: fondo marino con el logo después de la última palabra
+export const END_CARD_SEC = 1.5;
 
 // Encuadres de la persona (cambios de "plano" digitales). El vídeo original hace zoom a 32,4 s.
 export type Framing = {
