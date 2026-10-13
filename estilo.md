@@ -82,4 +82,7 @@ el resto es interfaz de Instagram). [SUPOSICIÓN] = inferido, no medido.
 - Efectos (whoosh) en algunas transiciones. [SUPOSICIÓN]
 
 ## 10. Correcciones del usuario
-(Paso 4: aquí se añaden las correcciones aprobadas.)
+- 2026-10-13 · **Sin subtítulos.** Un solo tipo de texto en pantalla: los titulares cinéticos
+  (anula la sección 3 y los subtítulos palabra a palabra del prompt original).
+- 2026-10-13 · **Tipografía:** títulos en Safira March, textos en Poppins (ver `marca.md`).
+- 2026-10-13 · **Aparición de las palabras:** seguir `referencia2.mp4` (pendiente de analizar).

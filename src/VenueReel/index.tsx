@@ -12,9 +12,8 @@ import {
   useVideoConfig,
 } from "remotion";
 import edit from "../../public/edit.json";
-import { CREAM, FONT, GOLD, NAVY } from "./brand";
+import { CREAM, GOLD, NAVY, TITLE_FONT } from "./brand";
 import { BRoll } from "./BRoll";
-import { Captions, Word } from "./Captions";
 import { loadBrandFonts } from "./fonts";
 import { HeadlineSeq } from "./Headline";
 import {
@@ -30,12 +29,6 @@ import {
 loadBrandFonts();
 
 export const VENUE_REEL_DURATION_SEC = edit.durationSec;
-
-const words: Word[] = edit.captions.map((c) => ({
-  text: c.text,
-  startMs: c.startMs,
-  endMs: c.endMs,
-}));
 
 const inBRoll = (t: number) => BROLL.some((c) => t >= c.from && t < c.to);
 
@@ -132,7 +125,7 @@ const CallToAction: React.FC = () => {
       <AbsoluteFill style={{ top: 360, bottom: "auto", alignItems: "center" }}>
         <span
           style={{
-            fontFamily: FONT,
+            fontFamily: TITLE_FONT,
             fontStyle: "italic",
             fontWeight: 800,
             fontSize: 96,
@@ -178,7 +171,6 @@ export const VenueReel: React.FC = () => {
       >
         <CallToAction />
       </Sequence>
-      <Captions words={words} />
       {FLASHES.map((t) => (
         <Flash key={t} at={t} />
       ))}

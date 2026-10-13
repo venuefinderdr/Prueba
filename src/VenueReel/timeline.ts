@@ -143,23 +143,5 @@ export const FRAMINGS: Framing[] = [
   { from: 32.4, scale: 1.0, x: -120, clipLeft: 27 }, // plano americano: tapa softbox y pértiga
 ];
 
-// Palabras que se destacan en bloque dorado en los subtítulos
-export const KEYWORDS = new Set([
-  "horas",
-  "semanas",
-  "tamaño",
-  "precio",
-  "días",
-  "finder",
-  "transparencia",
-  "claridad",
-  "verificados",
-  "instante",
-  "booking",
-  "140",
-  "internacional",
-  "like",
-]);
-
 // Transiciones con desenfoque/flash en los cambios de bloque
 export const FLASHES = [4.55, 19.62, 36.65];

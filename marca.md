@@ -17,11 +17,11 @@ colores, tipografía y logo. Si chocan, gana `marca.md`.
 | Gris cálido (texto secundario) | `#D9D5CC` | Subtítulos/segundo nivel sobre marino |
 | Gris azulado | `#3A4660` | Texto secundario sobre crema |
 
-## Tipografía
-- **Plus Jakarta Sans** (Google Fonts), pesos 400 / 500 / 700 / 800.
-- Titulares: 800, interlineado ~1.0, tracking negativo (-2 a -3 px a 1080 px de ancho).
-- Texto de apoyo: 500, interlineado 1.25–1.3.
-- Etiquetas pequeñas: 700, MAYÚSCULAS, tracking +6 px (p. ej. "NUEVO POST").
+## Tipografía (confirmada por la usuaria)
+- **Títulos: Safira March** (fuente de pago). Archivo en `public/fonts/SafiraMarch.*` (no incluido aún;
+  mientras falte, el render usa Georgia como sustituta).
+- **Textos: Poppins** (Google Fonts, libre), pesos 400 / 500 / 600 + 400 cursiva. Archivos en `public/fonts/`.
+- Lo de "Plus Jakarta Sans" venía del carrusel y queda **descartado**.
 
 ## Recursos gráficos
 - **Palabra destacada**: bloque rectangular dorado `#C9A960` con texto marino `#11203A`, peso 800,

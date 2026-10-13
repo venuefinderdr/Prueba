@@ -6,7 +6,7 @@ import {
   useCurrentFrame,
   useVideoConfig,
 } from "remotion";
-import { CREAM, FONT, GOLD, NAVY } from "./brand";
+import { CREAM, GOLD, NAVY, TEXT_FONT, TITLE_FONT } from "./brand";
 import { Headline as HeadlineT } from "./timeline";
 
 const SIZES = { xs: 44, sm: 72, lg: 132 } as const;
@@ -50,43 +50,45 @@ const HeadlineInner: React.FC<{
             marginTop: li === 0 ? 0 : line.size === "lg" ? 10 : 2,
           }}
         >
-          {(line.highlight ? [line.text] : line.text.split(" ")).map((word, wi) => {
-            const delay = Math.round(wordIndex++ * 0.09 * fps);
-            const p = interpolate(
-              frame,
-              [delay, delay + Math.round(0.2 * fps)],
-              [0, 1],
-              {
-                extrapolateLeft: "clamp",
-                extrapolateRight: "clamp",
-              },
-            );
-            return (
-              <span
-                key={wi}
-                style={{
-                  fontFamily: FONT,
-                  fontStyle: "italic",
-                  fontWeight: line.size === "lg" ? 800 : 500,
-                  fontSize: SIZES[line.size],
-                  lineHeight: 1.05,
-                  letterSpacing: line.size === "lg" ? -4 : -1,
-                  color: line.highlight ? NAVY : color,
-                  background: line.highlight ? GOLD : "transparent",
-                  padding: line.highlight ? "4px 30px 14px" : 0,
-                  textShadow:
-                    line.highlight || dark
-                      ? "none"
-                      : "0 4px 24px rgba(17,32,58,0.55)",
-                  filter: `blur(${(1 - p) * 12}px)`,
-                  opacity: p,
-                  transform: `translateY(${(1 - p) * 18}px)`,
-                }}
-              >
-                {word}
-              </span>
-            );
-          })}
+          {(line.highlight ? [line.text] : line.text.split(" ")).map(
+            (word, wi) => {
+              const delay = Math.round(wordIndex++ * 0.09 * fps);
+              const p = interpolate(
+                frame,
+                [delay, delay + Math.round(0.2 * fps)],
+                [0, 1],
+                {
+                  extrapolateLeft: "clamp",
+                  extrapolateRight: "clamp",
+                },
+              );
+              return (
+                <span
+                  key={wi}
+                  style={{
+                    fontFamily: line.size === "lg" ? TITLE_FONT : TEXT_FONT,
+                    fontStyle: "italic",
+                    fontWeight: line.size === "lg" ? 800 : 500,
+                    fontSize: SIZES[line.size],
+                    lineHeight: 1.05,
+                    letterSpacing: line.size === "lg" ? -4 : -1,
+                    color: line.highlight ? NAVY : color,
+                    background: line.highlight ? GOLD : "transparent",
+                    padding: line.highlight ? "4px 30px 14px" : 0,
+                    textShadow:
+                      line.highlight || dark
+                        ? "none"
+                        : "0 4px 24px rgba(17,32,58,0.55)",
+                    filter: `blur(${(1 - p) * 12}px)`,
+                    opacity: p,
+                    transform: `translateY(${(1 - p) * 18}px)`,
+                  }}
+                >
+                  {word}
+                </span>
+              );
+            },
+          )}
         </div>
       ))}
     </AbsoluteFill>
