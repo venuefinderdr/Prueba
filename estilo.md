@@ -93,6 +93,11 @@ el resto es interfaz de Instagram). [SUPOSICIÓN] = inferido, no medido.
   - Cada palabra entra en su momento: **desenfocada → nítida en ~0,15 s** (medido a 10 fps en la referencia).
   - La frase entera sale con **desenfoque + fundido en ~0,12 s** y entra la siguiente sin hueco.
   - Posición: **arriba a la izquierda** (x 80 px, y 200 px en 1080x1920), alineado a la izquierda.
-  - Color: crema + palabra grande dorada sobre marino/b-roll; marino sobre fondo crema.
+  - Color de la línea pequeña: crema sobre marino/b-roll; marino sobre fondo crema.
   - Sobre b-roll luminoso: degradado marino arriba (75 % → 0 % en el primer 38 % de la altura).
   - Frases y palabra grande se escriben en `src/VenueReel/phrases.ts` (`*palabra*` = grande).
+- 2026-10-13 · **Palabra grande en bloque dorado** (`#C9A960`, texto marino, Claudia), sin hueco entre
+  palabras contiguas para que una línea de varias palabras sea un solo bloque. Línea pequeña sin fondo.
+- 2026-10-13 · **B-roll: usar el tramo con la vista más impresionante**, normalmente **los primeros segundos**
+  del clip (`startAt: 0`). Saltar solo si al inicio algo tapa la vista (p. ej. IMG_2868 desde 1 s).
+  Mejor una vista distinta por hueco; repetir clip solo con otro encuadre.

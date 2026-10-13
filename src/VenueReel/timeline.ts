@@ -8,25 +8,26 @@ export type BRollClip = {
   startAt?: number; // segundo del clip original en el que empieza
 };
 
+// Cada clip arranca en su vista más impresionante (normalmente los primeros segundos)
 export const BROLL: BRollClip[] = [
   // Gancho: "¿Has pasado horas buscando el lugar perfecto...?"
-  { src: "broll/IMG_6062.mp4", from: 0, to: 1.5, startAt: 2 },
-  { src: "broll/IMG_2868.mp4", from: 1.5, to: 3.0, startAt: 2.5 },
-  { src: "broll/IMG_7433.mp4", from: 3.0, to: 4.55, startAt: 1 },
+  { src: "broll/IMG_6062.mp4", from: 0, to: 1.5, startAt: 0 }, // salón techo de cristal
+  { src: "broll/IMG_3765.mp4", from: 1.5, to: 3.0, startAt: 0 }, // puerta que se abre al patio
+  { src: "broll/IMG_7433.mp4", from: 3.0, to: 4.55, startAt: 0 }, // salón panorámico
   // "...tu boda, cumpleaños o fiestas"
-  { src: "broll/IMG_5279.mp4", from: 5.95, to: 6.9, startAt: 0.5 },
+  { src: "broll/IMG_5279.mp4", from: 5.95, to: 6.9, startAt: 0 }, // ceremonia frente al mar
   { src: "broll/IMG_5350.jpg", from: 6.9, to: 7.81 },
   // "espacios curados y verificados por expertos"
-  { src: "broll/IMG_6721.mp4", from: 25.59, to: 27.3, startAt: 4 },
-  { src: "broll/IMG_3765.mp4", from: 27.3, to: 29.0, startAt: 4 },
+  { src: "broll/IMG_6721.mp4", from: 25.59, to: 27.3, startAt: 0 }, // ventanal en arco
+  { src: "broll/IMG_2868.mp4", from: 27.3, to: 29.0, startAt: 1 }, // patio colonial (en 0 s tapa una columna)
   // "información detallada y fotos de cada uno"
   { src: "broll/IMG_3555.jpg", from: 29.0, to: 30.6 },
   { src: "broll/IMG_6297.jpg", from: 30.6, to: 32.26 },
   // "Filtrar... y solicitar cotización al instante" (tapa el zoom de cámara)
-  { src: "broll/IMG_6702.mp4", from: 32.26, to: 34.4, startAt: 1 },
-  { src: "broll/IMG_5316.mp4", from: 34.4, to: 36.65, startAt: 1.5 },
+  { src: "broll/IMG_6702.mp4", from: 32.26, to: 34.4, startAt: 0 }, // jardín frente a la iglesia
+  { src: "broll/IMG_5279.mp4", from: 34.4, to: 36.65, startAt: 1 }, // terraza al mar
   // "buscando crecer a nivel nacional e internacional"
-  { src: "broll/IMG_6062.mp4", from: 42.99, to: 45.98, startAt: 4.5 },
+  { src: "broll/IMG_5316.mp4", from: 42.99, to: 45.98, startAt: 0.5 }, // piscina infinita
 ];
 
 // Fondo detrás de la persona: crema en el problema, marino desde "Por eso creamos Venue Finder"

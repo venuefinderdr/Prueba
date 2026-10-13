@@ -8,7 +8,7 @@ Este repo es un proyecto de Remotion (plantilla TikTok) para editar vídeos vert
 - Paso 1 (preparar todo): hecho. Node 22, ffmpeg, whisper.cpp 1.6.0 (`./whisper.cpp`, gitignored,
   modelo `medium` en español; se descarga en la primera transcripción), skills oficiales en `.claude/skills/`.
 - Paso 2: hecho → `estilo.md`.
-- Paso 3: borrador v1 → composición `VenueReel` (`src/VenueReel/`). v2 (texto cinético, sin subtítulos) en `out/borrador-v2.mp4`.
+- Paso 3: borrador v1 → composición `VenueReel` (`src/VenueReel/`). v3 (texto cinético con bloque dorado, b-roll desde la mejor vista) en `out/borrador-v3.mp4`.
 - Paso 4: correcciones del usuario → añadir a `estilo.md` §10.
 
 ## Pipeline del reel (VenueReel)

@@ -70,7 +70,6 @@ const PhraseView: React.FC<{
     },
   );
   const smallColor = dark ? NAVY : CREAM;
-  const bigColor = dark ? NAVY : GOLD;
   const shadow = dark ? "none" : "0 3px 18px rgba(17,32,58,0.65)";
 
   return (
@@ -90,8 +89,9 @@ const PhraseView: React.FC<{
           style={{
             display: "flex",
             flexWrap: "wrap",
-            columnGap: line.big ? 30 : 16,
-            marginTop: li === 0 ? 0 : line.big ? -6 : 8,
+            columnGap: line.big ? 0 : 16,
+            rowGap: line.big ? 10 : 0,
+            marginTop: li === 0 ? 0 : 12,
           }}
         >
           {line.tokens.map((tok, ti) => {
@@ -112,8 +112,12 @@ const PhraseView: React.FC<{
                   fontWeight: line.big ? 400 : 500,
                   fontSize: line.big ? BIG : SMALL,
                   lineHeight: line.big ? 1.0 : 1.15,
-                  color: line.big ? bigColor : smallColor,
-                  textShadow: shadow,
+                  // Palabra grande en bloque dorado con texto marino (sello de marca.md);
+                  // bloques contiguos sin hueco para que una línea de varias palabras sea un solo bloque
+                  color: line.big ? NAVY : smallColor,
+                  background: line.big ? GOLD : "transparent",
+                  padding: line.big ? "0 22px 12px" : 0,
+                  textShadow: line.big ? "none" : shadow,
                   opacity: p,
                   filter: `blur(${(1 - p) * 10}px)`,
                 }}
